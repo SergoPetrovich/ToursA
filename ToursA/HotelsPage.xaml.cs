@@ -16,15 +16,18 @@ using System.Windows.Shapes;
 namespace ToursA
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для HotelsPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HotelsPage : Page
     {
-        public MainWindow()
+        public HotelsPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new HotelsPage());
-            Manager.MainFrame = MainFrame;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AddEditPage());
         }
     }
 }

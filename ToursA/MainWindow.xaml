@@ -12,9 +12,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
+        <Grid Background="#bae3e8"></Grid>
         <Image HorizontalAlignment="Left" Height="68" Margin="10,0,0,0" VerticalAlignment="Center" Width="79" Source="/Resources/Логотип.png"/>
         <TextBlock Text="Header" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-        <Grid Background="#bae3e8"></Grid>
         <Grid Grid.Row="2" Background="#445c93"></Grid>
+        <Frame Name="MainFrame" Grid.Row="1"></Frame>
     </Grid>
 </Window>
